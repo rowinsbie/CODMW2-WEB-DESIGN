@@ -1,0 +1,31 @@
+.container {
+    max-width:85%;
+    margin: auto;
+}
+
+.row {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: repeat(12,1fr);
+    margin: 0 auto;
+}
+
+@for $i from 1 through 12 {
+    .col-lg-#{$i}
+    {
+        grid-column: span $i;
+    }
+}
+
+@media only screen and (max-width:576px),
+only screen and (max-width:768px),
+only screen and (max-width:1180px) {
+    $sizes: "sm","md";
+    @each $size in $sizes {
+       @for $i from 1 through 12 {
+            .col-#{$size}-#{$i} {
+                grid-column: span $i;
+            }
+       }
+    }
+}

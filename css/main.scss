@@ -1,0 +1,96 @@
+@import 'fonts';
+@import 'util';
+@import 'resetter';
+@import 'grid';
+@import 'navbar';
+
+main {
+    background: linear-gradient(rgba(0,0,0, .9),rgba(0,0,0, .9)),url('./../images//bg.jpg');
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: 30rem;
+}
+
+.ghost-team {
+   
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.4;
+    font-family: 'cod-mw';
+
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.4rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.sub-title {
+    letter-spacing: 1rem;
+}
+
+.operators {
+    background: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .9)),url('./../images/BG2.jpg');
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 30rem;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+@media only screen and (max-width:576px),
+only screen and (max-width:768px),
+only screen and (max-width:1180px) {
+
+    main {
+        padding-top: 10rem !important;
+        padding-bottom: 20rem !important;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        line-height: 1.4;
+        font-family: 'cod-mw';
+    
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    .sub-title {
+        letter-spacing: 0.5rem !important;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .sub-title {
+        letter-spacing: 1rem;
+    }
+
+}

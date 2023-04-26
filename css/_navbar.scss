@@ -1,0 +1,57 @@
+.navbar {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    #logo {
+        width:5rem;
+        height: auto;
+    }
+
+    .nav-group {
+        display: flex;
+        justify-content: end;
+      
+        
+        li {
+            list-style: none;
+            padding: 0rem 2rem;
+            a {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .menu {
+        
+        .bx {
+           display: none;
+        }
+    }
+}
+
+
+@media only screen and (max-width:576px),
+only screen and (max-width:768px),
+only screen and (max-width:1180px) {
+
+        .menu {
+            .bx {
+               display: block !important;
+               font-size: 2rem;
+            }
+        }
+    
+        .nav-group {
+            display: none !important;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            li {
+                a {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    
+}
